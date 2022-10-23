@@ -1,0 +1,5 @@
+com/mongo/mongo_serv/MongoServApplication.class
+com/mongo/mongo_serv/service/UsersService.class
+com/mongo/mongo_serv/model/Usuarios.class
+com/mongo/mongo_serv/repository/UsersRepository.class
+com/mongo/mongo_serv/controller/UsersController.class
