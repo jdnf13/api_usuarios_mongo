@@ -1,5 +1,5 @@
-/home/david/Documentos/Repos/mongo_serv/src/main/java/com/mongo/mongo_serv/MongoServApplication.java
-/home/david/Documentos/Repos/mongo_serv/src/main/java/com/mongo/mongo_serv/service/UsersService.java
-/home/david/Documentos/Repos/mongo_serv/src/main/java/com/mongo/mongo_serv/repository/UsersRepository.java
-/home/david/Documentos/Repos/mongo_serv/src/main/java/com/mongo/mongo_serv/model/Usuarios.java
-/home/david/Documentos/Repos/mongo_serv/src/main/java/com/mongo/mongo_serv/controller/UsersController.java
+/home/david/Documentos/Repos/api_usuarios_mongo/src/main/java/com/mongo/mongo_serv/repository/UsersRepository.java
+/home/david/Documentos/Repos/api_usuarios_mongo/src/main/java/com/mongo/mongo_serv/service/UsersService.java
+/home/david/Documentos/Repos/api_usuarios_mongo/src/main/java/com/mongo/mongo_serv/model/Usuarios.java
+/home/david/Documentos/Repos/api_usuarios_mongo/src/main/java/com/mongo/mongo_serv/MongoServApplication.java
+/home/david/Documentos/Repos/api_usuarios_mongo/src/main/java/com/mongo/mongo_serv/controller/UsersController.java
