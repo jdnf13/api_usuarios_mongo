@@ -39,13 +39,11 @@ public class UsersController {
     }
 
     @DeleteMapping("/usuario_eliminar/{id}")
-    public String deleteById(@PathVariable String id){
-        boolean exist = usersService.findById(id).isPresent();
-        if(exist){
+    public String deleteById(@PathVariable String id){        
+        if(usersService.findById(id).isPresent()){
             usersService.deleteById(id);
-            System.out.println("Entramos a Eliminar");
-            boolean usr = usersService.findById(id).isPresent();
-            if(usr){
+            System.out.println("Entramos a Eliminar");            
+            if(usersService.findById(id).isPresent()){
                 return "No fue posible eliminar el usuario";
             }else{
                 return "Se elimino el usuario correctamente";
@@ -57,8 +55,7 @@ public class UsersController {
 
     @PutMapping("/usuario_modificar")
     public String update(@RequestBody Usuarios usuarios){
-        boolean usr = usersService.findById(usuarios.getId()).isPresent();
-        if(usr){
+        if(usersService.findById(usuarios.getId()).isPresent()){
           System.out.println("Entramos a Actualizar");
           usersService.save(usuarios);
           return "Resgistro actualizado";
