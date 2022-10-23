@@ -31,7 +31,11 @@ public class UsersController {
 
     @GetMapping("/usuario_id/{id}")
     public Usuarios findById(@PathVariable String id) {
-        return usersService.findById(id).get();
+        if(usersService.findById(id).isPresent()){
+            return usersService.findById(id).get();
+        }else{
+            return null;
+        }
     }
 
     @DeleteMapping("/usuario_eliminar/{id}")
